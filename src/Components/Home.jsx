@@ -17,7 +17,7 @@ const Home = () => {
               technologies and love working for my passion.
             </p>
             <div className="links flex flex-row justify-center items-center gap-6" target ="blank">
-              <a href="https://www.linkedin.com/in/devagya-rattan-050b30249/">
+              <a href="https://www.linkedin.com/in/devagya-rattan-050b30249/" target="blank">
                 <FaLinkedinIn />
               </a>
               <a href="https://github.com/devagya-rattan" target ="blank">

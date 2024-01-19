@@ -27,14 +27,18 @@ const Projects = () => {
                     </h3>
                     <p className="project-description">{data.description}</p>
                     <div className="deployment flex flex-row justify-between items-center gap-6">
-                      <p className="project-description">
-                        {" "}
-                        <GrDeploy />{" "}
-                      </p>
-                      <p className="project-description">
-                        {" "}
-                        <FaGithub />{" "}
-                      </p>
+                      <a href={data.deployment} target="blank">
+                        <p className="project-description">
+                          {" "}
+                          <GrDeploy />{" "}
+                        </p>
+                      </a>
+                      <a href={data.deployment} target="blank">
+                        <p className="project-description">
+                          {" "}
+                          <FaGithub />{" "}
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </div>

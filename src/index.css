@@ -57,6 +57,9 @@ section {
   font-size: 19px;
   font-weight: 500;
   box-shadow: 2px 1px rgb(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  background-color: var(--nav-background-color);
 }
 
 .logo {
@@ -131,7 +134,28 @@ section {
 .links a:hover{
   transform: scale(1.06);
 }
+.skills-contents p{
+  transition: transform .1s linear ;
+  cursor: pointer;
+}
+.skills-contents p:hover{
+  transform: scale(1.10);
+}
+.icon-name{
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact-container{
+  color: var(--text-color);
+}
+.footer-container{
+  color: var(--text-color);
+}
 @media screen and (max-width: 768px) {
+  .navbar{
+    position: relative;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -140,7 +164,6 @@ section {
     position: absolute;
     top: -100px;
     border-radius: 10px;
-    transition: all 0.3s ease;
   }
   .nav-links.mobile {
     background-color: var(--nav-background-color);
@@ -153,6 +176,7 @@ section {
     padding: 10px;
     border: 1px solid #008b8b;
     box-shadow: 2px 8px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
   }
 
   .menu-icon {
@@ -165,6 +189,15 @@ section {
     flex-flow: column;
     gap: 10px;
   }
+  .contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 20px;
+    width: 94%;
+    text-align: center;
+  }
   .about-content{
     display: flex;
     justify-content: center;
@@ -173,7 +206,14 @@ section {
     gap: 10px;
     width: 94%;
     text-align: center;
-
+  }
+  .contact-paragraphs{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 30px;
   }
   .info{
     font-size: var(--font-size);
